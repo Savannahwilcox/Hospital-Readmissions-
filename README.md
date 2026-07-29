@@ -23,6 +23,9 @@ hospitals average 0.9962.
 | Voluntary nonprofit - Private | 1,348 | 0.9962 | 45.5% |
 | Voluntary nonprofit - Church | 195 | 0.9916 | 39.5% |
 
+95% confidence intervals: for-profit 1.0097 to 1.0205, nonprofit private
+0.9926 to 0.9997. The intervals don't overlap.
+
 Federal, State, Tribal, and Physician-owned categories each have under 40
 hospitals and are left out of the comparison.
 

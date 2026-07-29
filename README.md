@@ -78,9 +78,7 @@ causes it. Unmeasured factors could explain both, like the health of the
 surrounding population or whether patients can get follow-up care after
 discharge.
 
-No significance testing was run. The groups are large enough that these gaps
-probably aren't random, but that isn't demonstrated here.
-
+The 95% confidence intervals for the two groups don't overlap (for-profit 1.0097 to 1.0205, nonprofit 0.9926 to 0.9997), so the difference isn't likely to be sampling noise. That rules out chance, not confounding. The stratified comparison above only holds size constant; other differences between the two groups remain unmeasured.
 The largest-quartile for-profit cell has 47 hospitals. It's the smallest group
 in the table and carries the biggest gap, so it's the least reliable comparison.
 

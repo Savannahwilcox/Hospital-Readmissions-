@@ -74,14 +74,16 @@ For-profit ratios don't move much, 1.0227 to 1.0226.
 
 Higher for for-profits on all six. COPD is close to even.
 
-## Limitations
+## What this doesn't show
 
-Ownership is associated with the difference, but this analysis can't say it
-causes it. Unmeasured factors could explain both, like the health of the
+The confidence intervals don't overlap, so the difference is unlikely to be due
+to random variation. That rules out chance, not confounding. Size is the only
+variable held constant.
+
+Unmeasured factors could explain the difference, like the health of the
 surrounding population or whether patients can get follow-up care after
 discharge.
 
-The 95% confidence intervals for the two groups don't overlap (for-profit 1.0097 to 1.0205, nonprofit 0.9926 to 0.9997), so the difference isn't likely to be sampling noise. That rules out chance, not confounding. The stratified comparison above only holds size constant; other differences between the two groups remain unmeasured.
 The largest-quartile for-profit cell has 47 hospitals. It's the smallest group
 in the table and carries the biggest gap, so it's the least reliable comparison.
 
@@ -108,7 +110,7 @@ and were dropped.
 ```bash
 python3.12 -m venv venv
 source venv/bin/activate
-pip install pandas matplotlib
+pip install pandas matplotlib numpy
 
 python3 explore.py
 python3 analyze.py

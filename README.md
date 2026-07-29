@@ -71,7 +71,7 @@ For-profit ratios don't move much, 1.0227 to 1.0226.
 
 Higher for for-profits on all six. COPD is close to even.
 
-## What this doesn't show
+## Limitations
 
 Ownership is associated with the difference, but this analysis can't say it
 causes it. Unmeasured factors could explain both, like the health of the

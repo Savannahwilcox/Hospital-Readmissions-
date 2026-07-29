@@ -100,3 +100,16 @@ result = by_state['Excess Readmission Ratio'].agg(['count', 'mean'])
 result = result.round(4).sort_values('mean', ascending=False)
 
 print(result.head(15))
+
+import numpy as np
+print()
+print("CONFIDENCE INTERVALS, HEART FAILURE")
+
+for owner in ['Proprietary', 'Voluntary non-profit - Private']:
+	group = df[df['Hospital Ownership'] == owner]['Excess Readmission Ratio']
+	n = len(group)
+	mean = group.mean()
+	se = group.std() / np.sqrt(n)
+	low = mean - 1.96 * se
+	high = mean + 1.96 * se
+	print(f"{owner[:30]:<23} n={n:>4} mean={mean:.4f} 95% CI [{low:.4f}, {high:.4f}]")
